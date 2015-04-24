@@ -1,2 +1,4 @@
 Articles = new Mongo.Collection('article');
-DrupalDdp.registerType('article', Articles);
+if (Meteor.isServer) {
+  DrupalDdp.registerType('article', Articles);
+}

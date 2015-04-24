@@ -1,10 +1,7 @@
 <template name="articles">
-  {{#each articles}}
-  <div class="col-md-4">
-    <div class="well">
-      <h2>{{title}}</h2>
-      <p>{{{body.value}}}</p>
-    </div>
+  <div id="articles-list" class="container">
+    {{#each articles}}
+      {{> article}}
+    {{/each}}
   </div>
-  {{/each}}
 </template>

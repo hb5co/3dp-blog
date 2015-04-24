@@ -1,2 +1,4 @@
 Pages = new Mongo.Collection('page');
-DrupalDdp.registerType('page', Pages);
+if (Meteor.isServer) {
+  DrupalDdp.registerType('page', Pages);
+}
