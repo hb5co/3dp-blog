@@ -11,3 +11,4 @@ twbs:bootstrap
 velocityjs:velocityjs
 isotope:isotope
 iron:router
+momentjs:moment
