@@ -1,7 +1,9 @@
 <template name="articles">
-  <div id="articles-list" class="container">
-    {{#each articles}}
-      {{> article}}
-    {{/each}}
+  <div id="articles-list">
+    <div class="row">
+      {{#each articles}}
+        {{> article}}
+      {{/each}}
+    </div>
   </div>
 </template>
