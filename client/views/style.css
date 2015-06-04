@@ -1,3 +1,8 @@
+.article-body p, .article-body-teaser {
+  font-family: American Typewriter;
+  font-size: 16px;
+}
+
 .navbar-brand {
   padding: 10px;
   line-height: 30px;

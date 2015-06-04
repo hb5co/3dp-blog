@@ -2,8 +2,14 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
-        <h1>{{title}}</h1>
-        <p>{{{body.value}}}</p>
+        <h1 class="article-title" id="full-article-title">
+          {{#if centerTitle}}
+            <center>{{title}}</center>
+          {{else}}
+            {{title}}
+          {{/if}}
+        </h1>
+        <p class="article-body">{{{body.value}}}</p>
       </div>
     </div>
   </div>

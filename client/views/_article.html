@@ -1,9 +1,9 @@
 <template name="article">
-  <div class="col-md-3 col-xs-12 article">
+  <div class="col-lg-3 col-md-4 col-xs-12 article">
     <div class="well">
-      <h2><a href="article/{{_id}}">{{title}}</a></h2>
+      <h2><a class="article-title-teaser" href="article/{{_id}}">{{title}}</a></h2>
       <h4>{{{dateCreated}}}</h4>
-      <p>{{{body}}}</p>
+      <p class="article-body-teaser">{{{body}}}</p>
     </div>
   </div>
 </template>

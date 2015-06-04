@@ -11,3 +11,10 @@ Template.article.helpers({
     return '<span class="glyphicon glyphicon-time"></span> ' + date;
   }
 });
+
+Template.article.onCreated(function () {
+  $('#navbar').velocity('scroll', {
+    duration: 1500,
+    easing: 'spring',
+  });
+});
