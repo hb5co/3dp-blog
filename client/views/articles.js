@@ -3,13 +3,13 @@ Template.articles.onCreated(function () {
 });
 
 Template.articles.helpers({
-  articles: function() {
+  articles: function () {
     var searchQuery = '.*' + Session.get('searchString') + '.*';
-    return Articles.find({title: {$regex: searchQuery, $options: "i"}}, {sort: {created: -1}});
+    return Articles.find({title: {$regex: searchQuery, $options: 'i'}}, {sort: {created: -1}});
   }
 });
 
-Template.articles.onRendered(function() {
+Template.articles.onRendered(function () {
   var self = this;
   articleWrapper = self.$('#articles-list');
   articles = articleWrapper.find('.article');
@@ -24,11 +24,11 @@ Template.articles.onRendered(function() {
     drag: true,
   });
   this.find('#articles-list .row')._uihooks = {
-    insertElement: function(article, next) {
+    insertElement: function (article, next) {
       $(article).insertBefore(next);
       $container.isotope('insert', $(article)).isotope('layout');
     },
-    removeElement: function(article) {
+    removeElement: function (article) {
       $(article).remove();
       $container.isotope('layout');
     }
