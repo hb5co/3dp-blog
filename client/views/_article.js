@@ -9,6 +9,9 @@ Template.article.helpers({
 
     // Return date with clock image.
     return '<span class="glyphicon glyphicon-time"></span> ' + date;
+  },
+  font: function () {
+    return Meteor.settings.public.font;
   }
 });
 
